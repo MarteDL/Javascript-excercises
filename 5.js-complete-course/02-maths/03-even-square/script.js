@@ -9,12 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
-        // your code here
+        let squareArray = [];
 
-    });
+        for (let i = 1; i <= 21; i++) {
+           let squareRoot = Math.sqrt(i);
 
+           if(Number.isInteger(squareRoot)) {
+               squareArray.push(i);
+           }
+        }
+
+        alert(squareArray);
+
+        }
+    );
 })();

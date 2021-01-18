@@ -10,9 +10,33 @@
 // You will have time to focus on it later.
 
 (function() {
+
     // to get the value of an input: document.getElementById("element-id").value
 
     var performOperation = function(operation) {
+
+        let operand1 = parseInt(document.getElementById("op-one").value, 10);
+        let operand2 = parseInt(document.getElementById("op-two").value, 10);
+
+        let result;
+
+        switch (operation) {
+            case "addition":
+                result = operand1 + operand2;
+                break;
+            case "substraction":
+                result = operand1 - operand2;
+                break;
+            case "multiplication":
+                result = operand1 * operand2;
+                break;
+            case "division":
+                result = operand1 / operand2;
+                break;
+        }
+
+        alert(result);
+
         // perform the operation
     };
 
@@ -21,4 +45,5 @@
             performOperation($btn.id);
         });
     });
+
 })();
