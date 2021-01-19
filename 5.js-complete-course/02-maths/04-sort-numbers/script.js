@@ -15,7 +15,7 @@
 
     document.getElementById("run").addEventListener("click", function () {
 
-        let numbersAsString = document.getElementById("numbers").value
+        let numbersAsString = document.getElementById("numbers").value;
         let unorderedArray = numbersAsString.split(", ");
 
         let sortedArray = unorderedArray.sort(function (a, b) {
