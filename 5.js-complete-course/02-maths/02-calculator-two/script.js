@@ -9,11 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // to get the value of an input: document.getElementById("element-id").value
 
-    var performOperation = function(operation) {
+    var performOperation = function (operation) {
 
         let operand1 = parseInt(document.getElementById("op-one").value, 10);
         let operand2 = parseInt(document.getElementById("op-two").value, 10);
@@ -40,8 +40,8 @@
         // perform the operation
     };
 
-    Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
-        $btn.addEventListener("click", function() {
+    Array.from(document.querySelectorAll("button.operator")).forEach(function ($btn) {
+        $btn.addEventListener("click", function () {
             performOperation($btn.id);
         });
     });

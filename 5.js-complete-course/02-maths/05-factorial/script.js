@@ -9,13 +9,31 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    
+(function () {
+
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function () {
 
-        // your code here
+        let num = parseInt((document.getElementById("number").value), 10);
+
+        function factorialize(num) {
+
+            let result = num;
+
+            if (num === 0 || num === 1) {
+                return 1;
+            }
+
+            while (num > 1) {
+                num--;
+                result *= num;
+            }
+
+            return result;
+        }
+
+        alert(factorialize(num));
 
     });
 
