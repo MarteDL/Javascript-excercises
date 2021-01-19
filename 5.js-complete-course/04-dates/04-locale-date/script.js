@@ -11,8 +11,19 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let today = new Date();
 
-    // your code here
+
+    let formatter = new Intl.DateTimeFormat('en-gb', {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false,
+    });
+
+    document.getElementById("target").innerHTML = formatter.format(today);
 
 })();

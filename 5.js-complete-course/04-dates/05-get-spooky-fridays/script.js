@@ -11,6 +11,26 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        let year = document.getElementById("year").value;
+        let result = [];
+
+        for (let i = 0; i <= 11; i++) {
+
+            let yearAndMonth = new Date(year, i, 13);
+
+            if(yearAndMonth.getDate() === 13 && yearAndMonth.getDay() === 5) {
+
+                let month = yearAndMonth.toLocaleString('default', {month:"long"});
+                result.push(month);
+
+            }
+
+        }
+
+        alert(result);
+
+    })
 
 })();
