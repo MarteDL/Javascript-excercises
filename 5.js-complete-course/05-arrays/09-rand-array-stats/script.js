@@ -38,6 +38,34 @@
         document.getElementById("sum").innerHTML = sum.toString();
         document.getElementById("average").innerHTML = average.toString();
 
+        /* get min, max and sum without Math.
+
+        let min = 100;
+        let max = 0;
+        let sum = 0;
+
+        for (let i = 0; i < randomNumbers.length; i++) {
+            if (randomNumbers[i] < min) {
+                min = randomNumbers[i];
+            }
+
+            if (randomNumbers[i] > max) {
+                max = randomNumbers[i];
+            }
+
+            sum += randomNumbers[i];
+
+        }
+
+        let average = sum/randomNumbers.length;
+
+        document.getElementById("min").innerHTML = min.toString();
+        document.getElementById("max").innerHTML = max.toString();
+        document.getElementById("sum").innerHTML = sum.toString();
+        document.getElementById("average").innerHTML = average.toString();
+
+        */
+
     })
 
 })();

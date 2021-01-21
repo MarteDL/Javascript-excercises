@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var people = [
         {
@@ -89,14 +89,25 @@
         },
     ];
 
-    document.getElementById("run").addEventListener("click", function (){
+    document.getElementById("run").addEventListener("click", function () {
+
+        let index = people.findIndex(element => element.lastname === "Dupont" && element.firstname === "Jean");
+
+        console.log(people[index].email);
+        console.log(index);
+
+
+        /* alternative solution with for loop
 
         for (let i = 0; i < people.length; i++) {
 
             if (people[i].lastname === "Dupont" && people[i].firstname === "Jean") {
-                alert(i);
+                console.log(people[i].email);
+                console.log(i);
             }
         }
+
+         */
     })
 
 })();

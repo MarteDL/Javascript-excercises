@@ -13,7 +13,6 @@
 
     let today = new Date();
 
-
     let formatter = new Intl.DateTimeFormat('en-gb', {
         weekday: 'long',
         day: 'numeric',

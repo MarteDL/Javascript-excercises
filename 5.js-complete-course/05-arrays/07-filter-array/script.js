@@ -93,6 +93,19 @@
 
         let grownUps = [];
 
+
+        people.forEach(function (element) {
+            if(element.age > 18) {
+                grownUps.push(element)
+            }
+        });
+
+        console.log(grownUps);
+
+
+        /* my original solution with a fori loop:
+
+
         for (let i = 0; i < people.length; i++) {
 
             if (people[i].age >= 18) {
@@ -100,7 +113,9 @@
             }
         }
 
-        console.log(grownUps);
+
+         */
+
 
     })
 
