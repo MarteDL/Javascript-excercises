@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var people = [
         {
@@ -89,22 +89,22 @@
         },
     ];
 
-    document.getElementById("run").addEventListener("click", function (){
+    document.getElementById("run").addEventListener("click", function () {
 
         let grownUps = [];
 
-
-        people.forEach(function (element) {
-            if(element.age > 18) {
-                grownUps.push(element)
+        people.forEach(function (person) {
+            if (person.age > 18) {
+                grownUps.push(person)
             }
         });
 
         console.log(grownUps);
 
 
-        /* my original solution with a fori loop:
+        /* my first solution with a fori loop:
 
+        let grownUps = [];
 
         for (let i = 0; i < people.length; i++) {
 
@@ -113,9 +113,9 @@
             }
         }
 
+        console.log(grownUps);
 
-         */
-
+        */
 
     })
 

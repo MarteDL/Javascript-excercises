@@ -33,8 +33,14 @@
 
         console.log(fruits);
 
-    })
+        /* alternative solution with .splice
 
-    // your code here
+        fruits.splice(0, 1, "banana");
+        fruits.splice(-1, 1, "kiwi");
+        console.log(fruits);
+
+         */
+
+    })
 
 })();

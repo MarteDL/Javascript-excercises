@@ -91,7 +91,7 @@
 
     document.getElementById("run").addEventListener("click", function () {
 
-        let totalAges = people.reduce((a, b) => a + b.age, 0)
+        let totalAges = people.reduce((total, person) => total + person.age, 0);
 
         console.log(totalAges);
 

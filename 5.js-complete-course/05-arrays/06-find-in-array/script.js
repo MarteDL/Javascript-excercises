@@ -97,17 +97,17 @@
         console.log(index);
 
 
-        /* alternative solution with for loop
+        /* alternative solution with foreach loop
 
-        for (let i = 0; i < people.length; i++) {
-
-            if (people[i].lastname === "Dupont" && people[i].firstname === "Jean") {
-                console.log(people[i].email);
-                console.log(i);
+        people.forEach(function (person) {
+            if (person.lastname === "Dupont" && person.firstname === "Jean") {
+                console.log(person.email);
+                console.log(people.indexOf(person));
             }
-        }
+        })
 
-         */
+        */
+
     })
 
 })();
