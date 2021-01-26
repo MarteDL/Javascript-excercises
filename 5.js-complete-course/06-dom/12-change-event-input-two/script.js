@@ -33,7 +33,6 @@
         //     document.getElementById("validity").innerText = "Not ok";
         // }
 
-
        // alternative solution with regex:
 
         let passwordElement = document.getElementById("pass-one");

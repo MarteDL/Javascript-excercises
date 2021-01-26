@@ -11,6 +11,36 @@
 
 (function() {
 
-    // your code here
+    let display = document.getElementById("target");
 
+    let button1 = document.getElementById("part-one");
+    let button2 = document.getElementById("part-two");
+    let button3 = document.getElementById("part-three");
+    let button4 = document.getElementById("part-four");
+
+    document.querySelectorAll("button").forEach((button) =>
+
+        button.addEventListener("click", function(){
+
+            let value = button.innerHTML;
+            let max = button.dataset.max;
+
+            if (value < max){
+                value++;
+            }
+
+            value = value.toString();
+
+            if (value.length === max.length) {
+                button.innerHTML = value;
+            }
+
+            else {
+                button.innerHTML = "0" + value;
+            }
+
+            display.innerHTML = "0" + button1.innerHTML + button2.innerHTML + button3.innerHTML + button4.innerHTML;
+
+        })
+    )
 })();

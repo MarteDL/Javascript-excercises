@@ -23,5 +23,4 @@
         document.getElementById("counter").innerText = passwordNumberOfCharacters + "/10";
 
     });
-
 })();
