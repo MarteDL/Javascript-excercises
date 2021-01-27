@@ -11,8 +11,6 @@
 
 (function() {
 
-    let display = document.getElementById("target");
-
     let button1 = document.getElementById("part-one");
     let button2 = document.getElementById("part-two");
     let button3 = document.getElementById("part-three");
@@ -29,17 +27,8 @@
                 value++;
             }
 
-            value = value.toString();
-
-            if (value.length === max.length) {
-                button.innerHTML = value;
-            }
-
-            else {
-                button.innerHTML = "0" + value;
-            }
-
-            display.innerHTML = "0" + button1.innerHTML + button2.innerHTML + button3.innerHTML + button4.innerHTML;
+            button.innerHTML = value.toString().padStart(max.length, "0");
+            document.getElementById("target").innerHTML = "0" + button1.innerHTML + button2.innerHTML + button3.innerHTML + button4.innerHTML;
 
         })
     )

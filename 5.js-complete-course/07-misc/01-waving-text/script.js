@@ -11,44 +11,40 @@
 
 (function () {
 
-    let waveText = document.getElementById("target").innerText;
+    let originalText = document.getElementById("target").innerHTML;
 
-    let allCharacters = waveText.split("");
+    let charactersArray = originalText.split("");
     document.getElementById("target").innerText = "";
 
-    for (let i = 0; i < allCharacters.length; i++) {
+    charactersArray.forEach((character, index) => {
 
         let span = document.createElement("span");
-        span.id = "span" + i;
-
-        console.log(document.getElementById("span" + i));
-
-        let content = document.createTextNode(allCharacters[i]);
+        let content = document.createTextNode(charactersArray[index]);
 
         span.appendChild(content);
         document.getElementById("target").appendChild(span);
 
-        switch (i%10) {
+        switch (index%10) {
             case 0:
             case 9:
-                document.getElementById("span" + i).style.fontSize = "x-small";
+                span.style.fontSize = "x-small";
                 break;
             case 1:
             case 8:
-                document.getElementById("span" + i).style.fontSize = "small";
+                span.style.fontSize = "small";
                 break;
             case 2:
             case 7:
-                document.getElementById("span" + i).style.fontSize = "medium";
+                span.style.fontSize = "medium";
                 break;
             case 3:
             case 6:
-                document.getElementById("span" + i).style.fontSize = "large";
+                span.style.fontSize = "large";
                 break;
             case 4:
             case 5:
-                document.getElementById("span" + i).style.fontSize = "x-large";
+                span.style.fontSize = "x-large";
                 break;
         }
-    }
+    })
 })();

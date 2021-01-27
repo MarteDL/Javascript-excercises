@@ -13,7 +13,7 @@
 
     document.getElementById("slider").addEventListener("input", function(){
 
-        document.getElementById("target").innerHTML = "0" + document.getElementById("slider").value;
+        document.getElementById("target").innerHTML = document.getElementById("slider").value.toString().padStart(10, "0");
 
     })
 })();

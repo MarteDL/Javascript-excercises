@@ -13,10 +13,9 @@
 
     let text = document.getElementById("target").innerText;
     let separatedCharacters = text.split("");
-    document.getElementById("target").innerText = "";
-    let index = 0
+    let index = 0;
 
-    console.log(text);
+    document.getElementById("target").innerText = "";
 
     let delay = setInterval(displayCharacters, (Math.random() * 500));
 
