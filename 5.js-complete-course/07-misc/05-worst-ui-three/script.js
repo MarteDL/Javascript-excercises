@@ -47,7 +47,9 @@
             return number;
     }
 
-    // ugly and inefficiant alternative
+    // ugly and inefficient alternative
+
+    // let input = document.getElementById("target");
 
     // let button1 = document.getElementById("fix-part-one");
     // let button2 = document.getElementById("fix-part-two");
