@@ -16,10 +16,8 @@
         window.lib.getPersons().then((persons) => {
             console.table(persons);
         })
-            .catch((error) => {
-                if (error) {
+            .catch(() => {
                     console.error("Pwah, pwah, pwah...");
-                }
             });
     })
 })();

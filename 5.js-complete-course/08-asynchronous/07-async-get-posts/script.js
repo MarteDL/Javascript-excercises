@@ -11,10 +11,10 @@
 
 (() => {
 
-    document.getElementById("run").addEventListener("click", () => {
+    document.getElementById("run").addEventListener("click", async () => {
 
-        window.lib.getPosts(async (articles) => {
-            await console.table(articles);
-        })
+        let posts = await window.lib.getPosts();
+        console.table(posts);
+
     })
 })();

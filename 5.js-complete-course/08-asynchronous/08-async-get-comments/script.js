@@ -22,17 +22,3 @@
         }
     )
 })()
-
-
-// async function postAndComment() {
-//     let posts = await window.lib.getPosts();
-//     for (let article of posts) {
-//         let comment = await window.lib.getComments(article.id);
-//
-//         article.comments = comment;
-//         console.log(article);
-//     }
-// }
-// postAndComment();
-
-// react
