@@ -10,5 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        let heroId = document.getElementById("hero-id").value;
+
+        fetch("http://localhost:3000/heroes/" + heroId, {
+            method: "DELETE",
+            body: null
+        })
+            .then(response => {
+                return response.json()
+            });
+
+        fetch("http://localhost:3000/heroes/")
+            .then(response => {
+                return response.json()
+            })
+            .then(object => console.log(object));
+    })
+
 })();
